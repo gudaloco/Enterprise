@@ -1,36 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADD Anime</title>
-    <link rel="stylesheet" href="./css/style_home.css" />
-  </head>
-  <body>
-    <header id="header">
-      <a id="logo" href="home.html"
-        ><img src="../img/loja_anime/Logo_loja.jpg" alt="logo loja"
-      /></a>
-      <nav id="nav">
-        <button
-          aria-label="Abrir Menu"
-          id="btn-mobile"
-          aria-haspopup="true"
-          aria-controls="menu"
-          aria-expanded="false"
-        >
-          <span id="hamburguer"></span>
-        </button>
-        <!-- Em button estamos tratando a função do meu hamburguer -->
-        <!-- Inicio opções Menu -->
-        <ul id="menu" role="menu">
-          <li><a class="linkMenu" href="home.html">Home</a></li>
-          <li><a class="linkMenu" href="#">Quem Somos</a></li>
-          <li><a class="linkMenu" href="#">Produtos</a></li>
-          <li><a class="linkMenu" href="#">Contatos</a></li>
-          <li><a class="linkMenu" href="#">#blog</a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ADD Anime</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style_home.css" />
+    </head>
+    <body>
+        <header id="header">
+            <a id="logo" href="home.html"><img src="../img/loja_anime/Logo_loja.jpg" alt="logo loja" /></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+                <!-- Em button estamos tratando a função do meu hamburguer -->
+                <!-- Inicio opções Menu -->
+                <ul id="menu" role="menu">
+                    <li><a class="linkMenu" href="home.html">Home</a></li>
+                    <li><a class="linkMenu" href="#">Quem Somos</a></li>
+                    <li><a class="linkMenu" href="#">Produtos</a></li>
+                    <li><a class="linkMenu" href="#">Contatos</a></li>
+                    <li><a class="linkMenu" href="#">#blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Inicio Carousel Pagina Home -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="../img/camping anime.jpg" class="d-block w-100" alt="Perfume 1" />
+                </div>
+                <div class="carousel-item" data-bs-interval="750">
+                    <img src="../img/camping.jpg" class="d-block w-100" alt="Perfume 2" />
+                </div>
+                <div class="carousel-item" data-bs-interval="500">
+                    <img src="../img/ceu estrelado.jpg" class="d-block w-100" alt="Perfume 3" />
+                </div>
+                <div class="carousel-item" data-bs-interval="250">
+                    <img src="../img/loja_anime/Logo_loja.jpg" class="d-block w-100" alt="Perfume 4" />
+                </div>
+            </div>
+            <!-- Inicio controle carousel -->
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Proximo</span>
+            </button>
+            <!-- Fim controle carousel -->
+        </div>
+        <!-- Fim Carousel Pagina Home -->
+        <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
