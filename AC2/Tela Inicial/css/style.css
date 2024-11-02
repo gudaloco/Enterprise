@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    box-sizing: border-box;
+    position: fixed;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-items: flex-start;
+    display: inline-flex;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.Home a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.Home a:hover {
+    color: rgb(187, 187, 187);
+}
+
+
+.item-menu {
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+}
+
+.item-menu a {
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 0.4em;
+    font-size: 15px;
+    left: 0px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.item-menu a:hover {
+    color: rgb(187, 187, 187);
+}
+
+.disabled {
+    color: gray;
+}
+
+.container-carousel {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 100px;
+}
+
+#carouselExampleInterval {
+    width: 60%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    /* margin: auto; */
+    /* Garante que o caroousel esteja acima de outros elementos e utilizando um número menor que #menu, ficará atrás do menu */
+    margin-top: 10px;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    width: 50%;
+}
+
