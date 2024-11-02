@@ -2,7 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.header {
+/* .header {
     box-sizing: border-box;
     position: fixed;
     background-color: rgb(32, 32, 32);
@@ -53,30 +53,28 @@ body {
 
 .disabled {
     color: gray;
-}
+} */
 
-.container-carousel {
+/* .container-carousel {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 100px;
 }
 
 #carouselExampleInterval {
     width: 60%;
     height: auto;
-    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    /* margin: auto; */
-    /* Garante que o caroousel esteja acima de outros elementos e utilizando um número menor que #menu, ficará atrás do menu */
     margin-top: 10px;
-}
+    padding: 100px;
+} */
 
 .carousel-item img {
-    max-height: 500px;
-    width: 50%;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;
 }
 
