@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(128, 255, 123) !important;
+}
+
+
+.container {
+    padding: 70px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: verdana;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: justify;
+    border-radius: 50px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.card h3 {
+    font-family: "perpetua";
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 19px;
+    line-height: 1.5;
+}
